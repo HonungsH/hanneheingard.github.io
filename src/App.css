@@ -18,8 +18,8 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-top: 100px;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -35,4 +35,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+:root {
+  --primary-bg-color: #282c34; /* Replace with your desired color */
+}
+
+/* Apply the primary background color globally */
+body {
+  background-color: var(--primary-bg-color);
 }
