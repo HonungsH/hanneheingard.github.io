@@ -37,6 +37,13 @@
   }
 }
 
+p, h3 {
+  text-align: left;
+}
+h1 {
+  font-weight: bold;
+}
+
 :root {
   --primary-bg-color: #282c34; /* Replace with your desired color */
   --secondary-bg-color: #7e8085;

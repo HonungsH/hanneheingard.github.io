@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
 import HelloThere from "./components/HelloThere";
+import Experience from "./components/AboutMe";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
          Hello, welcome to the world of Honung :)
         </h1>
           <HelloThere />
+          <Experience/>
 
    {/*     <a
           className="App-link"
