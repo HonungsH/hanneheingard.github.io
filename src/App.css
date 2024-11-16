@@ -13,14 +13,14 @@
   }
 }
 
-.App-header {
+.App-body {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   padding-top: 100px;
   align-items: center;
-  font-size: calc(10px + 2vmin);
+  /*font-size: calc(10px + 2vmin);*/
   color: white;
 }
 
@@ -39,6 +39,7 @@
 
 :root {
   --primary-bg-color: #282c34; /* Replace with your desired color */
+  --secondary-bg-color: #7e8085;
 }
 
 /* Apply the primary background color globally */

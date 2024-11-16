@@ -8,11 +8,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <header className="App-header">
+      <div className="App-body">
         {/*<img src={logo} className="App-logo" alt="logo" />*/}
-        <p>
+        <h1>
          Hello, welcome to the world of Honung :)
-        </p>
+        </h1>
           <HelloThere />
 
    {/*     <a
@@ -23,7 +23,7 @@ function App() {
         >
           Learn React
         </a>*/}
-      </header>
+      </div>
     </div>
   );
 }
