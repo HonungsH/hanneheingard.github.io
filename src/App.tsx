@@ -1,11 +1,31 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
 import HelloThere from "./components/HelloThere";
-import Experience from "./components/AboutMe";
+import AboutMe from "./components/AboutMe";
+import axios from "axios";
 
 function App() {
+/*
+    const [message, setMessage] = useState<string | null>(null);
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const response = await axios.get<string>(
+                    "http://localhost:8080/start/hello"
+                );
+                setMessage(response.data);
+            } catch (err) {
+
+            }
+        };
+
+        fetchData();
+    }, []);
+*/
+
+
   return (
     <div className="App">
       <Header />
@@ -15,7 +35,7 @@ function App() {
          Hello, welcome to the world of Honung :)
         </h1>
           <HelloThere />
-          <Experience/>
+          <AboutMe/>
 
    {/*     <a
           className="App-link"

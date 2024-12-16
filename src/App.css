@@ -13,6 +13,11 @@
   }
 }
 
+.container-fluid {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
 .App-body {
   background-color: #282c34;
   min-height: 100vh;
@@ -42,6 +47,11 @@ p, h3 {
 }
 h1 {
   font-weight: bold;
+  margin-bottom: 100px;
+}
+
+.jobTitle {
+  text-align: left;
 }
 
 :root {
