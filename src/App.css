@@ -55,8 +55,9 @@ h1 {
 }
 
 :root {
-  --primary-bg-color: #282c34; /* Replace with your desired color */
+  --primary-bg-color: #282c34;
   --secondary-bg-color: #7e8085;
+  --tooltip-bg-color: #e28743;
 }
 
 /* Apply the primary background color globally */

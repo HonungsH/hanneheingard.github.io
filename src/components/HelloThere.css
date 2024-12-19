@@ -17,3 +17,16 @@
     padding-left: 20px;
     padding-right: 20px;
 }
+
+/* Tooltip inner content */
+.custom-tooltip .tooltip-inner {
+    background-color: var(--tooltip-bg-color); /* Example: green color */
+    color: white !important;             /* White text */
+    font-size: 1rem;                     /* Optional: adjust text size */
+    border-radius: 0.25rem;              /* Rounded edges */
+}
+
+/* Tooltip arrow */
+.custom-tooltip .arrow::before {
+    border-bottom-color: #4caf50 !important; /* Matches tooltip background */
+}

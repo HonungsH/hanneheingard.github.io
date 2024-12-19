@@ -5,6 +5,7 @@ import { IconName } from "@fortawesome/fontawesome-svg-core";
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import { faLinkedin, faGithub, faReadme } from "@fortawesome/free-brands-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
+import {LinksConfig} from "../LinksConfig";
 
 // Add the icon to the library
 library.add(faLinkedin, faGithub, faReadme);
@@ -13,23 +14,25 @@ interface ButtonProps {
     label: string;
     tooltipText: string;
     icon: IconName;
+    hrefKey: keyof typeof LinksConfig;
     onClick?: () => void;
 }
 
-const TooltipButton: React.FC<ButtonProps> = ({label, tooltipText, icon, onClick}) => {
+const TooltipButton: React.FC<ButtonProps> = ({label, tooltipText, icon, hrefKey, onClick}) => {
+    const href = LinksConfig[hrefKey];
+
     return (
         <OverlayTrigger
-            placement="top" // Positions the tooltip above the button
+            placement="bottom" // Positions the tooltip above the button
             overlay={
-                <Tooltip id="button-tooltip">
+                <Tooltip id="button-tooltip" className="custom-tooltip">
                     {tooltipText}
                 </Tooltip>
             }
         >
-            <Button className="mx-2" variant="primary" onClick={onClick || (() => console.log("Navigating to Example.com"))}
-                    href="https://www.linkedin.com" target="_blank">
-                <FontAwesomeIcon icon={["fab", icon]} className="" />
-
+            <Button className="mx-2" variant="secondary" size="lg" onClick={onClick || (() => console.log(`Navigating to ${href}`))}
+                    href={href} target="_blank">
+                <FontAwesomeIcon icon={["fab", icon]} className="" size="2x"/>
             </Button>
         </OverlayTrigger>
     );
