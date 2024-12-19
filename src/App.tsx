@@ -32,7 +32,7 @@ function App() {
       <div className="App-body">
         {/*<img src={logo} className="App-logo" alt="logo" />*/}
         <h1>
-         Hello, welcome to the world of Honung :)
+         Hello, welcome to my world!
         </h1>
           <HelloThere />
           <AboutMe/>

@@ -1,6 +1,7 @@
 import {Container, Row, Col} from "react-bootstrap";
 import styled from "styled-components";
 import Divider from "./Divider";
+import TooltipButton from "./TooltipButton";
 
 const Timeline = styled.div`
     position: relative;
@@ -50,26 +51,27 @@ export const FluidContainer = () => {
 
 const AboutMe: React.FC = () => {
     return (
-        <Container>
-            <h1 className="" style={{marginBottom:"30px"}}>About Me</h1>
+        <><Container>
+            <h1 className="" style={{marginBottom: "30px"}}>About Me</h1>
             <Divider/>
             <Row>
                 <Col>
-                    <h2 className="mb-4" style={{textAlign:"left"}}>Education</h2>
+                    <h2 className="mb-4" style={{textAlign: "left"}}>Education</h2>
                 </Col>
                 <Col>
-                    <h2 className="mb-4" style={{textAlign:"left"}}>Work experience</h2>
+                    <h2 className="mb-4" style={{textAlign: "left"}}>Work experience</h2>
                     <Timeline>
                         {/* Timeline Item 1 */}
                         <TimelineItem>
                             <Dot bgColor=""/>
-                            <Connector />
+                            <Connector/>
                             <TimelineContent>
                                 <p><strong>Jan 2023 - Present</strong></p>
                                 <p><strong>Netcompany A/S | Copenhagen, Denmark</strong></p>
                                 <h5 className="jobTitle">Managing IT Consultant</h5>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra in lorem at laoreet.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra in lorem at
+                                    laoreet.
                                 </p>
                             </TimelineContent>
                         </TimelineItem>
@@ -77,13 +79,14 @@ const AboutMe: React.FC = () => {
                         {/* Timeline Item 2 */}
                         <TimelineItem>
                             <Dot bgColor="#fff"/>
-                            <Connector />
+                            <Connector/>
                             <TimelineContent>
                                 <p><strong>2021 - 2022</strong></p>
                                 <p><strong>Netcompany A/S | Copenhagen, Denmark</strong></p>
                                 <h5 className="jobTitle">Senior IT Consultant</h5>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra in lorem at laoreet.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra in lorem at
+                                    laoreet.
                                 </p>
                             </TimelineContent>
                         </TimelineItem>
@@ -91,13 +94,14 @@ const AboutMe: React.FC = () => {
                         {/* Timeline Item 3 */}
                         <TimelineItem>
                             <Dot bgColor="#fff"/>
-                            <Connector />
+                            <Connector/>
                             <TimelineContent>
                                 <p><strong>2018 - 2020</strong></p>
                                 <p><strong>Netcompany A/S | Copenhagen, Denmark</strong></p>
                                 <h5 className="jobTitle">IT Consultant</h5>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra in lorem at laoreet.
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra in lorem at
+                                    laoreet.
                                 </p>
                             </TimelineContent>
                         </TimelineItem>
@@ -105,6 +109,7 @@ const AboutMe: React.FC = () => {
                 </Col>
             </Row>
         </Container>
+            </>
     );
 };
 
